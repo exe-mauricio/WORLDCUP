@@ -1,25 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XCO WORLD CUP</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WORLD CUP XCO</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- LINK para enlazar los Estilos CSS -->
-    <link rel="stylesheet" href="style.css">
+    header, footer {
+      background-color: #222;
+      padding: 1rem;
+      text-align: center;
+    }
 
+    nav {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav button {
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #880000;
+    }
+
+    section {
+      display: none;
+      padding: 1.5rem;
+      animation: fadeIn 0.6s ease-in;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      max-width: AUTO;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body id="home">
+<body>
+  <header>
+    <h1>WORLD CUP XCO</h1>
+  </header>
 
-    <!-- Contenido del sitio web visible en el navegador -->
-        <h1>Título de mi proyecto</h1>
-        <h2>Descripción de mi proyecto</h2>
+  <nav>
+    <button onclick="showPage('intro')">Introducción</button>
+    <button onclick="showPage('valero')">David Valero</button>
+    <button onclick="showPage('nino')">Nino Schurter</button>
+    <button onclick="showPage('victor')">Victor Koretzky</button>
+    <button onclick="showPage('vidaurre')">Martín Vidaurre</button>
+    <button onclick="showPage('alan')">Alan Hatherly</button>
+  </nav>
 
-        <nav>
-            <a href="seccion1.html">Sección 1</a>
-            <a href="seccion2.html">Sección 2</a>
-            <a href="seccion3.html">Sección 3</a>          
-        </nav>
-    
+  <main>
+    <section id="intro" class="active">
+      <h2>Copa Mundial y el Maillot Arcoíris</h2>
+      <p>La Copa Mundial de Ciclismo de Montaña de la UCI es una serie de carreras de bicicleta de montaña de varias rondas que está sancionada por la Unión Ciclista Internacional. La primera serie de la Copa del Mundo, que estaba compuesta por eventos de campo a través, se celebró en 1989. La Copa Mundial de Down Hill se inauguró dos años después, y la Copa Mundial de Doble Slalom se lanzó en 1998.</p>
+      <p>El formato de doble slalom, que implicaba eliminatorias con dos jinetes en los campos paralelos en cada serie, evolucionó a cuatro cruces (con cuatro ciclistas en un solo campo por serie) en 2002 antes de ser eliminado después de la temporada 2011. Los ciclistas ganan puntos según su clasificación en cada evento. Los líderes de la serie reinante en cada clase se identifican con una camiseta especial.
+      </p>
+      <img src="https://www.imbikemag.com/wp-content/uploads/2023/07/competitors.jpg" alt="Portada Mundial MTB" />
+    </section>
+
+    <section id="valero">
+      <h2>David Valero</h2>
+      <p>David Valero Serrano (Baza, 27 de diciembre de 1988) es un deportista español que compite en ciclismo de montaña en la disciplina de campo a través.
+
+        Participó en tres Juegos Olímpicos de Verano, obteniendo una medalla de bronce en Tokio 2020, en la prueba individual, el noveno lugar en Río de Janeiro 2016 y el décimo en París 2024.
+        
+        Ganó una medalla de plata en el Campeonato Mundial de Ciclismo de Montaña de 2022 y una medalla de bronce en el Campeonato Europeo de Ciclismo de Montaña de 2018.
+        
+        Además, obtuvo una medalla de bronce en el Campeonato Mundial de Ciclismo de Montaña en Maratón de 2024 y una medalla de plata en el Campeonato Europeo de Ciclismo de Montaña en Maratón de 2024.</p>
+     <img src="https://cdn.todomountainbike.net/images/articles/2022/david-valero-participante-titan-desert-arabia-saudi.jpg" alt="Imagen a pantalla completa  ">
+     <img src="https://www.mountainbike.es/uploads/s1/14/11/36/98/david-valero-regresa-a-la-vuelta-a-ibiza-mtb-2025-un-reto-personal-junto-a-su-mecanico.jpeg" alt="david ">
+    </section>
+
+    <section id="nino">
+      <h2>Nino Schurter</h2>
+      <p>Nino Schurter (Tersnaus, 13 de mayo de 1986) es un deportista suizo que compite en ciclismo de montaña en la disciplina de campo a través, aunque también compite en carretera.
+        Participó en cinco Juegos Olímpicos de Verano, obteniendo en total tres medallas, oro en Río de Janeiro 2016, plata en Londres 2012 y bronce en Pekín 2008, el cuarto lugar en Tokio 2020 y el noveno en París 2024. En los Juegos Europeos de Bakú 2015 obtuvo la medalla de oro en la prueba de campo a través.
+        Ganó veinticinco medallas en el Campeonato Mundial de Ciclismo de Montaña entre los años 2003 y 2023, y ocho medallas en el Campeonato Europeo de Ciclismo de Montaña entre los años 2003 y 2020.
+        Fue el abanderado de Suiza en la ceremonia de apertura de los Juegos Olímpicos de París 2024 junto con la tiradora Nina Christen.</p>
+        <img src="https://www.mountainbike.es/uploads/s1/13/12/87/09/scott-spark-nino-cape-epic-2024-27.jpeg" alt="Nino ">
+        <img src="https://sponser.com/cdn/shop/articles/Nino-Schurter_Athlet_700x900_02d53918-4200-4c5d-9adf-77e2707fb422_2000x.jpg?v=1688473040" alt="uci ">
+    </section>
+
+    <section id="victor">
+      <h2>Victor Koretzky</h2>
+      <p>Victor Koretzky (Béziers, 26 de junio de 1994) es un deportista francés que compite en ciclismo en las modalidades de montaña, en la disciplina de campo a través, y ruta.
+        Participó en tres Juegos Olímpicos de Verano, entre los años 2016 y 2024, obteniendo una medalla de plata en París 2024, en la prueba de campo a través, y el quinto lugar en Tokio 2020, en la misma prueba.
+        Ganó ocho medallas en el Campeonato Mundial de Ciclismo de Montaña entre los años 2011 y 2024, y dos medallas en el Campeonato Europeo de Ciclismo de Montaña, en los años 2011 y 2016. </p>
+        <img src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/jmbwi81mdn2cv9ecgodi" alt="victor">
+        <img src="https://cdn.mtbdata.com/media/2965/conversions/victor-koretzky-lg.jpg" alt="koretzky">
+        <img src="https://cdn.todomountainbike.net/images/articles/2024/copa-mundo-short-track-elite-araxa-2024.jpg" alt="victore">
+    </section>
+
+    <section id="vidaurre">
+      <h2>Martín Vidaurre</h2>
+      <p>Martín Vidaurre Kossmann (Santiago, 18 de febrero de 2000) es un deportista chileno que compite en ciclismo de montaña en la disciplina de campo a través y milita en el Specialized Factory Racing.
+        Ha conseguido medalla de bronce en los Juegos Panamericanos de 2019 y de plata en los Juegos Panamericanos de 2023 en la disciplina de campo a través, también representó a Chile en los Juegos Olímpicos de Tokio 2020 y en Juegos Olímpicos de París 2024.]</p>
+        <img src="https://clubmanquehue.cl/wp-content/uploads/2024/04/martin-vidaurre.jpg" alt="martin">
+        <img src="https://eldeportero.cl/wp-content/uploads/2023/06/Martin-Vidaurre-Junio-2023.webp" alt="vidaurre">
+        <img src="https://www.latercera.com/resizer/Vg5bKGT_OB9Jb6Ns9NxG1Seg82M=/arc-anglerfish-arc2-prod-copesa/public/MHUA662DEFEB5LM3CTTEJQ4E2E.jpg" alt="vidaurrre">
+    </section>
+
+    <section id="alan">
+      <h2>Alan Hatherly</h2>
+      <p>Alan Hatherly (Durban, 15 de marzo de 1996) es un deportista sudafricano que compite en ciclismo, en las modalidades de montaña (campo a través) y ruta.
+
+        Participó en tres Juegos Olímpicos de Verano, entre los años 2016 y 2024, obteniendo una medalla de bronce en París 2024, en la prueba de campo a través, y el octavo lugar en Tokio 2020, en la misma prueba.
+        
+        Ganó tres medallas en el Campeonato Mundial de Ciclismo de Montaña, en los años 2019 y 2024.</p>
+        <img src="https://www.cannondale.com/-/media/images/landing-pages/our-riders/alan-hatherly/c24_athletepage_alan_desktop_1.ashx" alt="aalan">
+        <img src="https://www.mountainbike.es/uploads/s1/13/88/88/03/asi-sera-el-equipo-giant-factory-off-road-con-alan-hatherly.jpeg" alt="haterly">
+        <img src="https://cdn.brujulabike.com/media/166043/conversions/img-7050-1240-img-7050-1240-1600-1240.jpg" alt="alan haterly ">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Revista XCO. Fanpage no oficial.</p>
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
